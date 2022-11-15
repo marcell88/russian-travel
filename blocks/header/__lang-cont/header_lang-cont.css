@@ -1,0 +1,6 @@
+.header__lang-cont {
+    display: flex;
+    flex-direction: row;
+    column-gap: 18px;
+    justify-content: flex-end;
+}

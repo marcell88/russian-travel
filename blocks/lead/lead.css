@@ -1,0 +1,28 @@
+.lead {
+    max-width: 984px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 56px;
+}
+
+/* (984px - 928px) / (1280px - 1024px) * (x - 1024px) + 928px */
+@media screen and (max-width: 1280px) {
+    .lead {
+        max-width: calc(928px + (100% - 1024px) * (984 - 928) / (1280 - 1024));
+    }
+}
+
+/* (928px - 768px) / (1024px - 768px) * (x - 768px) + 768px */
+@media screen and (max-width: 1024px) {
+    .lead {
+        max-width: calc(768px + (100% - 768px) * (928 - 768) / (1024 - 768));
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .lead {
+        max-width: 100%;
+    }
+}

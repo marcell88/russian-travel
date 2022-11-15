@@ -8,6 +8,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+    --scrollbar-width: calc(100vw - 100%);
 }
 
 /* (48px - 24px) / (1024px - 768px) * (x - 768px) + 24px */

@@ -6,6 +6,7 @@
 
 /* Общие стили и миксы */
 @import url(../blocks/page/page.css);
+@import url(../blocks/margin/_type/margin_type_narrow.css);
 
 /* Шапка сайта */
 @import url(../blocks/header/header.css);
@@ -19,3 +20,11 @@
 @import url(../blocks/lead/__subtitle/lead__subtitle.css);
 @import url(../blocks/lead/__pic/lead__pic.css);
 @import url(../blocks/lead/__text/lead__text.css);
+
+/*  Чего мы там не видели? */
+@import url(../blocks/intro/intro.css);
+@import url(../blocks/intro/__title/intro__title.css);
+@import url(../blocks/intro/__text/intro__text.css);
+@import url(../blocks/intro/__list/intro__list.css);
+@import url(../blocks/intro/__list-text/intro__list-text.css);
+@import url(../blocks/intro/__list-number/intro__list-number.css);

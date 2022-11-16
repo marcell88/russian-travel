@@ -19,8 +19,8 @@
     opacity: 0.3;
 }
 
-/* (24px - 18px) / (768px - 320px) * (x - 320px) + 18px */
-/* (28px - 20px) / (768px - 320px) * (x - 320px) + 20px */
+/* 768px -> 320px: font-size 24px -> 18px */
+/* 768px -> 320px: line-height 28px -> 20px */
 @media screen and (max-width: 768px) {
     .header__lang-text {
         font-size: calc(18px + (100vw - 320px)*(24 - 18)/(768 - 320));
@@ -28,6 +28,8 @@
     }
 }
 
+/* 320px-: font-size 18px */
+/* 320px-: line-height 20px */
 @media screen and (max-width: 320px) {
     .header__lang-text {
         font-size: 18px;

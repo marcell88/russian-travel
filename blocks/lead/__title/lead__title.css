@@ -1,5 +1,5 @@
 .lead__title {
-    width: 720px;
+    width: 100%;
     font-style: normal;
     font-weight: 900;
     font-size: 96px;
@@ -9,19 +9,19 @@
     margin: 0;
 }
 
-
+/* 768px -> 320px: font-size 96px -> 40px */
+/* 768px -> 320px: line-height 100px -> 44px */
 @media screen and (max-width: 768px) {
     .lead__title  {
-        width: calc(288px + (100vw - 320px) * (720 - 288) / (768 - 320));
         font-size: calc(40px + (100vw - 320px) * (96 - 40) / (768 - 320));
         line-height: calc(44px + (100vw - 320px) * (100 - 44) / (768 - 320));
     }
 }
 
-
+/* 320px-: font-size 40px */
+/* 320px-: line-height 44px */
 @media screen and (max-width: 320px) {
     .lead__title  {
-        width: 288px;
         font-size: 40px;
         line-height: 44px;
     }

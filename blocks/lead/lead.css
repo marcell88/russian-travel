@@ -5,28 +5,19 @@
     justify-content: flex-start;
     align-items: center;
     padding-top: 56px;
+    overflow: visible;
 }
 
-/* (984px - 928px) / (1280px - 1024px) * (x - 1024px) + 928px */
-/* (56px - 48px) / (1280px - 1024px) * (x - 1024px) + 48px */
+/* 1280px -> 1024px: padding 56px -> 48px */
 @media screen and (max-width: 1280px) {
     .lead {
-        max-width: calc(928px + (100% - 1024px) * (984 - 928) / (1280 - 1024));
         padding-top: calc(48px + (100% - 1024px) * (56 - 48) / (1280 - 1024));
     }
 }
 
-/* (928px - 768px) / (1024px - 768px) * (x - 768px) + 768px */
+/* 1024px-: padding 48px */
 @media screen and (max-width: 1024px) {
     .lead {
-        max-width: calc(768px + (100% - 768px) * (928 - 768) / (1024 - 768));
-        padding-top: 48px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .lead {
-        max-width: 100%;
         padding-top: 48px;
     }
 }

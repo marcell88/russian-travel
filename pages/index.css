@@ -7,6 +7,7 @@
 /* Общие стили и миксы */
 @import url(../blocks/page/page.css);
 @import url(../blocks/margin/_type/margin_type_narrow.css);
+@import url(../blocks/margin/_type/margin_type_footer-header.css);
 
 /* Шапка сайта */
 @import url(../blocks/header/header.css);
@@ -28,3 +29,7 @@
 @import url(../blocks/intro/__list/intro__list.css);
 @import url(../blocks/intro/__list-text/intro__list-text.css);
 @import url(../blocks/intro/__list-number/intro__list-number.css);
+
+/*  Галерея фото */
+@import url(../blocks/gallery/gallery.css);
+@import url(../blocks/gallery/__pic/gallery__pic.css);

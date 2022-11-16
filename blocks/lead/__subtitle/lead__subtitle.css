@@ -11,18 +11,26 @@
     padding-bottom: 64px;
 }
 
+/* Переписываем поведение (модификатор) для подзаголовка */
+/* 1280px -> 1024px: padding-bottom 64px -> 56px */
 @media screen and (max-width: 1280px) {
     .lead__subtitle  {
         padding-bottom: calc(56px + (100vw - 1024px) * (64 - 56) / (1280 - 1024));;
     }
 }
 
+/* 1024px -> 768px: padding-bottom 56px */
 @media screen and (max-width: 1024px) {
     .lead__subtitle  {
         padding-bottom: 56px;
     }
 }
 
+/* 768px -> 320px: padding-bottom 56px -> 40px */
+/* 768px -> 320px: padding-top 32px -> 16px */
+/* 768px -> 320px: font-size 30px -> 16px */
+/* 768px -> 320px: line-height 36px -> 20px */
+/* 768px -> 320px: width 640px -> 288px */
 @media screen and (max-width: 768px) {
     .lead__subtitle  {
         font-size: calc(16px + (100vw - 320px) * (30 - 16) / (768 - 320));
@@ -39,6 +47,6 @@
         line-height: 20px;
         padding-top: 16px;
         padding-bottom: 40px;
-        width: 288px;
+        width: 100%;
     }
 }

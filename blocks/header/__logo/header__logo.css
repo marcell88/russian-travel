@@ -3,8 +3,8 @@
     height: 52px;
 }
 
-/* (176-142)/(768-320) * (x -320) + 142 */
-/* (52-42)/(768-320) * (x - 320) + 42 */
+/* 768px -> 320px: height 52px -> 42px */
+/* 768px -> 320px: width 1762px -> 142px */
 @media screen and (max-width: 768px) {
     .header__logo {
         width: calc(142px + (100vw - 320px)*(176 - 142)/(768 - 320));
@@ -12,6 +12,8 @@
     }
 }
 
+/* 320px-: height 42px */
+/* 320px-: width 142px */
 @media screen and (max-width: 320px) {
     .header__logo {
         width: 142px;

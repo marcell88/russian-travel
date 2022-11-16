@@ -1,31 +1,32 @@
+/* 1280px+: width фиксированный 984px */
 .margin_type_narrow {
-    max-width: 984px;
+    width: 984px;
 }
 
-/*1024-1280px: width 984 -> 928px*/
+/* 1280px -> 1024px: width 984px -> 928px */
 @media screen and (max-width: 1280px) {
     .margin_type_narrow {
-        max-width: calc(928px + (100% - 1024px) * (984 - 928) / (1280 - 1024));
+        width: calc(928px + (100% - 1024px) * (984 - 928) / (1280 - 1024));
     }
 }
 
-/*768-1024px: width 928 -> 720px*/
+/* 1024px -> 768px: width 928px -> 720px*/
 @media screen and (max-width: 1024px) {
     .margin_type_narrow {
-        max-width: calc(720px + (100% - 768px) * (928 - 720) / (1024 - 768));
+        width: calc(720px + (100% - 768px) * (928 - 720) / (1024 - 768));
     }
 }
 
-/*320-768px: width 720 -> 288px */
+/* 768px -> 320px: width 720px -> 288px */
 @media screen and (max-width: 768px) {
     .margin_type_narrow {
-        max-width: calc(288px + (100% - 320px) * (720 - 288) / (768 - 320));
+        width: calc(288px + (100% - 320px) * (720 - 288) / (768 - 320));
     }
 }
 
-/*320px-: width 288px */
+/*320px-: width фиксированный 288px */
 @media screen and (max-width: 320px) {
     .margin_type_narrow {
-        max-width: 288px;
+        width: 288px;
     }
 }

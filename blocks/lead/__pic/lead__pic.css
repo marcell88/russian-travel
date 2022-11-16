@@ -2,3 +2,25 @@
     object-fit: cover;
     width: 100%;
 }
+
+/* Переписываем поведение (модификатор) для картинки */
+/* 1024px -> 768px: width 928px -> 768px */
+@media screen and (max-width: 1024px) {
+    .lead__pic {
+        width: calc(768px + (100vw - 768px) * (928 - 768) / (1024 - 768));
+    }
+}
+
+/* 768px -> 320px: width 768px -> 320px */
+@media screen and (max-width: 768px) {
+    .lead__pic {
+        width: calc(320px + (100vw - 320px) * (768 - 320) / (768 - 320));
+    }
+}
+
+/*320px-: width фиксированный 320px */
+@media screen and (max-width: 320px) {
+    .lead__pic {
+        width: 320px;
+    }
+}

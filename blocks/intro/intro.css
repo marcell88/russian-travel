@@ -1,5 +1,27 @@
 .intro {
     color:white;
     padding-top: 92px;
-    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 1024px -> 768px: padding 92px -> 88px */
+@media screen and (max-width: 1024px) {
+    .intro {
+        padding-top: calc(88px + (100% - 768px) * (92 - 88) / (1024 - 768));
+    }
+}
+
+/* 768px -> 320px: padding 88px -> 64px */
+@media screen and (max-width: 768px) {
+    .intro {
+        padding-top: calc(64px + (100% - 320px) * (88 - 64) / (768 - 320));
+    }
+}
+
+/* 320px-: padding 64px */
+@media screen and (max-width: 320px) {
+    .intro {
+        padding-top: 64px;
+    }
 }

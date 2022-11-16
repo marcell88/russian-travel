@@ -1,0 +1,15 @@
+.places__link-cont {
+    grid-area: link;
+    align-self: end;
+}
+
+@media screen and (max-width: 320px) {
+    .places__link-cont{
+        align-self: flex-start;
+        display: flex;
+        flex-direction: column;
+        overflow: visible;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}

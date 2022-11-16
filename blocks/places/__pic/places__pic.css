@@ -1,0 +1,38 @@
+.places__pic {
+    grid-area: img;
+    width: 460px;
+    height: 460px;
+}
+
+/* 1280px -> 1024px: 460px -> 440px */
+@media screen and (max-width: 1280px) {
+    .places__pic {
+        width: calc(440px + (100vw - 1024px) * (460 - 440) / (1280 - 1024));
+        height: calc(440px + (100vw - 1024px) * (460 - 440) / (1280 - 1024));
+    }
+}
+
+/* 1024px -> 768px: 440px -> 340px */
+@media screen and (max-width: 1024px) {
+    .places__pic {
+        width: calc(340px + (100vw - 768px) * (440 - 340) / (1024 - 768));
+        height: calc(340px + (100vw - 768px) * (440 - 340) / (1024 - 768));
+    }
+}
+
+/* 768px -> 320px: 340px -> 320px */
+@media screen and (max-width: 768px) {
+    .places__pic {
+        width: calc(320px + (100vw - 320px) * (340 - 320) / (768 - 320));
+        height: calc(320px + (100vw - 320px) * (340 - 320) / (768 - 320));
+    }
+}
+
+/* 320px-: фиксируем размер 320px */
+@media screen and (max-width: 320px) {
+    .places__pic {
+        align-self: center;
+        width: 320px;
+        height: 320px;
+    }
+}

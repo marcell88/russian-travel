@@ -1,0 +1,4 @@
+.places__text-cont {
+    grid-area: paragraph;
+    align-self: top;
+}

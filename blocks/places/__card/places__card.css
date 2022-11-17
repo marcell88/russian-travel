@@ -27,7 +27,6 @@
     .places__card {
         display: flex;
         flex-direction: column;
-        overflow: visible;
         justify-content: flex-start;
         align-items: flex-start;
         row-gap: 32px;

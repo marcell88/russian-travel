@@ -1,32 +1,26 @@
+/* Задача МИКСа: Несколько блокков меняются в размерах по схожим законам -> объединить */
+
 /* 1280px+: width фиксированный 984px */
+
 .margin_type_narrow {
     width: 984px;
 }
 
-/* 1280px -> 1024px: width 984px -> 928px */
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1250px) {
     .margin_type_narrow {
-        width: calc(928px + (100% - 1024px) * (984 - 928) / (1280 - 1024));
+        width: 928px;
     }
 }
 
-/* 1024px -> 768px: width 928px -> 720px*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1000px) {
     .margin_type_narrow {
-        width: calc(720px + (100% - 768px) * (928 - 720) / (1024 - 768));
+        width: 720px;
     }
 }
 
-/* 768px -> 320px: width 720px -> 288px */
-@media screen and (max-width: 768px) {
+/* 288/320 = 90% */
+@media screen and (max-width: 750px) {
     .margin_type_narrow {
-        width: calc(288px + (100% - 320px) * (720 - 288) / (768 - 320));
-    }
-}
-
-/*320px-: width фиксированный 288px */
-@media screen and (max-width: 320px) {
-    .margin_type_narrow {
-        width: 288px;
+        width: 90%;
     }
 }

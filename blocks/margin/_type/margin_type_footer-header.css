@@ -1,4 +1,5 @@
-/* Ширина 100% но паддинги слева и справа меняются  */
+/* Задача МИКСа: Ширина 100% но паддинги слева и справа меняются  */
+
 /* 1280px+: padding 48px */
 .margin_type_footer-header {
     box-sizing: border-box;
@@ -7,26 +8,18 @@
     padding-right: 48px;
 }
 
-/* 1280px -> 1024px: padding 48px */
+/* @media screen and (max-width: 1280px) */
 
-/* 1024px -> 768px: padding 48px -> 24px */
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) */
+
+@media screen and (max-width: 1000px) {
     .margin_type_footer-header {
-        padding-left: calc(24px + (100% - 768px)*(48 - 24)/(1024 - 768));
-        padding-right: calc(24px + (100% - 768px)*(48 - 24)/(1024 - 768));
+        padding-left: 24px;
+        padding-right: 24px;
     }
 }
 
-/* 768px -> 320px: padding 24px -> 16px */
-@media screen and (max-width: 768px) {
-    .margin_type_footer-header {
-        padding-left: calc(16px + (100% - 320px)*(24 - 16)/(768 - 320));
-        padding-right: calc(16px + (100% - 320px)*(24 - 16)/(768 - 320));
-    }
-}
-
-/*320px-: padding 16px */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 750px) {
     .margin_type_footer-header {
         padding-left: 16px;
         padding-right: 16px;

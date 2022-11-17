@@ -12,3 +12,18 @@
     line-height: 14px;
     letter-spacing: 1.5px;
 }
+
+@media screen and (max-width: 928px) {
+    .lead__text{
+        box-sizing: border-box;
+        width: 100%;
+        padding-left: 24px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .lead__text{
+        width: 100%;
+        padding-left: 16px;
+    }
+}

@@ -1,23 +1,21 @@
 .lead {
-    max-width: 984px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     padding-top: 56px;
-    overflow: visible;
+    max-width: 984px;
 }
 
-/* 1280px -> 1024px: padding 56px -> 48px */
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1250px) {
     .lead {
-        padding-top: calc(48px + (100% - 1024px) * (56 - 48) / (1280 - 1024));
+        max-width: 928px;
+        padding-top: 48px;
     }
 }
 
-/* 1024px-: padding 48px */
-@media screen and (max-width: 1024px) {
-    .lead {
-        padding-top: 48px;
+@media screen and (max-width: 928px) {
+    .lead{
+        width: 100%;
     }
 }

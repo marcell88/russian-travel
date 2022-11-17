@@ -1,0 +1,31 @@
+.toBaikal__subtitle {
+    text-decoration: none;
+    color: white;
+    margin:0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    padding-top: 32px;
+    width: 360px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .toBaikal__subtitle {
+        font-size: calc(14px + (100vw - 320px) * (18 - 14) / (768 - 320));
+        line-height: calc(16px + (100vw - 320px) * (22 - 16) / (768 - 320));
+        width: calc(288px + (100vw - 320px) * (360 - 288) / (768 - 320));
+        padding-top: calc(16px + (100vw - 320px) * (32 - 16) / (768 - 320));
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .toBaikal__subtitle {
+        font-size: 14px;
+        line-height: 16px;
+        width: 288px;
+        padding-top: 16px;
+    }
+}

@@ -4,32 +4,29 @@
     height: 460px;
 }
 
-/* 1280px -> 1024px: 460px -> 440px */
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1250px) {
     .places__pic {
-        width: calc(440px + (100vw - 1024px) * (460 - 440) / (1280 - 1024));
-        height: calc(440px + (100vw - 1024px) * (460 - 440) / (1280 - 1024));
+        width: 440px;
+        height: 440px;
     }
 }
 
-/* 1024px -> 768px: 440px -> 340px */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1000px) {
     .places__pic {
-        width: calc(340px + (100vw - 768px) * (440 - 340) / (1024 - 768));
-        height: calc(340px + (100vw - 768px) * (440 - 340) / (1024 - 768));
+        width: 340px;
+        height: 340px;
     }
 }
 
-/* 768px -> 320px: 340px -> 320px */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 750px) {
     .places__pic {
-        width: calc(320px + (100vw - 320px) * (340 - 320) / (768 - 320));
-        height: calc(320px + (100vw - 320px) * (340 - 320) / (768 - 320));
+        width: 320px;
+        height: 320px;
     }
 }
 
 /* 320px-: фиксируем размер 320px */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
     .places__pic {
         align-self: center;
         width: 320px;

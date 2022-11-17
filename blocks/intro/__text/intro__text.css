@@ -9,13 +9,7 @@
 }
 
 /* 1024px -> 768px: width 690px -> 720px */
-@media screen and (max-width: 1024px) {
-    .intro__text {
-        width: calc(720px + (100vw - 768px) * (690 - 720) / (1024 - 768));
-    }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     .intro__text {
         width: 100%;
     }

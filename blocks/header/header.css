@@ -1,4 +1,8 @@
 .header {
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 48px;
+    padding-right: 48px;
     padding-top: 28px;
     display: flex;
     flex-direction: row;
@@ -6,17 +10,17 @@
     align-items: flex-end;
 }
 
-/* 768px -> 320px: padding 28px -> 16px */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     .header {
-        padding-top: calc(16px + (100% - 320px) * (28 - 16) / (768 - 320));
+        padding-left: 24px;
+        padding-right: 24px;
     }
 }
 
-/* 320px-: padding 16px */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 750px) {
     .header {
         padding-top: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 }
-

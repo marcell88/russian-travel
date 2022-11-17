@@ -6,3 +6,23 @@
     line-height: 163%;
     padding-bottom: 26px;
 }
+
+.places__text:last-child {
+    padding-bottom: 0;
+}
+
+/* Pixel Perfect */
+/* 1024px -> 768px: font-size 18px -> 16px */
+@media screen and (max-width: 1000px) {
+    .places__text {
+        padding-bottom: 27px;
+        font-size: 16px;
+    }
+}
+
+/* Pixel Perfect */
+@media screen and (max-width: 750px) {
+    .places__text {
+        padding-bottom: 25px;
+    }
+}

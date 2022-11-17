@@ -5,33 +5,30 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 80px;
+    row-gap: 80px;
+    width: 984px;;
 }
 
-/* 1024px -> 768px: padding 92px -> 88px */
-/* 1024px -> 768px: gap 80px -> 73px */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1250px) {
     .places {
-        padding-top: calc(88px + (100% - 768px) * (92 - 88) / (1024 - 768));
-        gap: calc(73px + (100% - 768px) * (80 - 73) / (1024 - 768));
+        width: 928px;
     }
 }
 
-/* 768px -> 320px: padding 88px -> 64px */
-/* 768px -> 320px: gap 73px -> 50px */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     .places {
-        padding-top: calc(64px + (100% - 320px) * (88 - 64) / (768 - 320));
-        gap: calc(50px + (100% - 320px) * (73 - 50) / (768 - 320));
-
+        width: 720px;
+        padding-top: 88px;
+        row-gap: 73px;
     }
 }
 
-/* 320px-: padding 64px */
-/* 320px-: gap 50px */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 750px) {
     .places {
+        width: 100%;
         padding-top: 64px;
-        gap: 50px;
+        padding-left: 16px;
+        padding-right: 16px;
+        row-gap: 50px;
     }
 }

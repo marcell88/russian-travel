@@ -3,25 +3,26 @@
     padding-top: 92px;
     display: flex;
     flex-direction: column;
+    width: 984px;
 }
 
-/* 1024px -> 768px: padding 92px -> 88px */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1250px) {
     .intro {
-        padding-top: calc(88px + (100% - 768px) * (92 - 88) / (1024 - 768));
+        width: 928px;
     }
 }
 
-/* 768px -> 320px: padding 88px -> 64px */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     .intro {
-        padding-top: calc(64px + (100% - 320px) * (88 - 64) / (768 - 320));
+        width: 720px;
+        padding-top: 88px;
     }
 }
 
-/* 320px-: padding 64px */
-@media screen and (max-width: 320px) {
+/* 288/320 = 90% */
+@media screen and (max-width: 750px) {
     .intro {
         padding-top: 64px;
+        width: 90%;
     }
 }

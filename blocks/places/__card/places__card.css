@@ -10,28 +10,27 @@
         "img paragraph"
 }
 
-/* 1280px -> 1024px: column-gap 40px -> 32px */
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1250px) {
     .places__card {
-        column-gap: calc(32px + (100vw - 1024px) * (40 - 32) / (1280 - 1024));
+        column-gap: 32px;
     }
 }
 
-/* 1024px -> 768px: column-gap 32px -> 28px */
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1000px) {
     .places__card {
-        column-gap: calc(20px + (100vw - 768px) * (32 - 28) / (1024 - 768));
+        column-gap: 28px;
     }
 }
 
-/* 320px-: перестрааиваем grid */
-@media screen and (max-width: 320px) {
+/* меняем grid на flex - иначе текст становится плохо читаемым */
+@media screen and (max-width: 600px) {
     .places__card {
         display: flex;
         flex-direction: column;
         overflow: visible;
         justify-content: flex-start;
         align-items: flex-start;
+        row-gap: 32px;
     }
 }
 

@@ -1,0 +1,42 @@
+.toBaikal__title {
+    text-decoration: none;
+    color: white;
+    margin:0;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 76px;
+    text-align: center;
+    padding-top: 245px;
+    width: 560px;
+}
+
+@media screen and (max-width: 1280px) {
+    .toBaikal__title {
+        padding-top: calc(195px + (100vw - 1024px) * (245 - 195) / (1280 - 1024));
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .toBaikal__title {
+        padding-top: calc(115px + (100vw - 768px) * (195 - 115) / (1024 - 768));
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .toBaikal__title {
+        font-size: calc(32px + (100vw - 320px) * (72 - 32) / (768 - 320));
+        line-height: calc(35px + (100vw - 320px) * (76 - 35) / (768 - 320));
+        width: calc(288px + (100vw - 320px) * (560 - 288) / (768 - 320));
+        padding-top: calc(33px + (100vw - 320px) * (115 - 33) / (768 - 320));
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .toBaikal__title {
+        font-size: 32px;
+        line-height: 35px;
+        width: 288px;
+        padding-top: 33px;
+    }
+}

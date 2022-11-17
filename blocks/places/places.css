@@ -7,18 +7,18 @@
     flex-direction: column;
     justify-content: center;
     row-gap: 80px;
-    width: 984px;;
+    max-width: 984px;;
 }
 
 @media screen and (max-width: 1250px) {
     .places {
-        width: 928px;
+        max-width: 928px;
     }
 }
 
 @media screen and (max-width: 1000px) {
     .places {
-        width: 720px;
+        max-width: 720px;
         padding-top: 88px;
         row-gap: 73px;
         padding-bottom: 90px;

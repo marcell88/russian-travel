@@ -6,14 +6,13 @@
 
 /* Общие стили и миксы */
 @import url(../blocks/page/page.css);
-@import url(../blocks/margin/_type/margin_type_narrow.css);
-@import url(../blocks/margin/_type/margin_type_footer-header.css);
 
 /* Шапка сайта */
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__logo/header__logo.css);
 @import url(../blocks/header/__lang-cont/header_lang-cont.css);
 @import url(../blocks/header/__lang-text/header__lang-text.css);
+@import url(../blocks/header/__lang-text/_disabled/header__lang-text_disabled.css);
 
 /*  Ваша полка сверху */
 @import url(../blocks/lead/lead.css);
@@ -27,12 +26,12 @@
 @import url(../blocks/intro/__title/intro__title.css);
 @import url(../blocks/intro/__text/intro__text.css);
 @import url(../blocks/intro/__list/intro__list.css);
-@import url(../blocks/intro/__list-text/intro__list-text.css);
 @import url(../blocks/intro/__list-number/intro__list-number.css);
 
 /*  Галерея фото */
 @import url(../blocks/photo-grid/photo-grid.css);
 @import url(../blocks/photo-grid/__pic/photo-grid__pic.css);
+@import url(../blocks/photo-grid/__title/photo-grid__title.css);
 
 /* Места России */
 @import url(../blocks/places/places.css);

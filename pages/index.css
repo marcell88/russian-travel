@@ -46,8 +46,8 @@
 @import url(../blocks/places/__text/places__text.css);
 
 /* До Байкала на собаках */
-@import url(../blocks/toBaikal/toBaikal.css);
-@import url(../blocks/toBaikal/__cover/toBaikal__cover.css);
-@import url(../blocks/toBaikal/__title/toBaikal__title.css);
-@import url(../blocks/toBaikal/__subtitle/toBaikal__subtitle.css);
-@import url(../blocks/toBaikal/__link/toBaikal__link.css);
+@import url(../blocks/cover/cover.css);
+@import url(../blocks/cover/__link/cover__link.css);
+@import url(../blocks/cover/__overlay/cover__overlay.css);
+@import url(../blocks/cover/__subtitle/cover__subtitle.css);
+@import url(../blocks/cover/__title/cover__title.css);

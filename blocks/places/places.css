@@ -2,6 +2,7 @@
     color:white;
     box-sizing: border-box;
     padding-top: 92px;
+    padding-bottom: 92px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,6 +21,7 @@
         width: 720px;
         padding-top: 88px;
         row-gap: 73px;
+        padding-bottom: 90px;
     }
 }
 
@@ -27,6 +29,7 @@
     .places {
         width: 100%;
         padding-top: 64px;
+        padding-bottom: 66px;
         padding-left: 16px;
         padding-right: 16px;
         row-gap: 50px;

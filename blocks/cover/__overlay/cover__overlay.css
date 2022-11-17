@@ -8,6 +8,10 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+
+    position:absolute;
+    top: 0px;
+    left: 0px;
 }
 
 .cover__overlay:hover {

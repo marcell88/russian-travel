@@ -47,6 +47,7 @@
 
 /* До Байкала на собаках */
 @import url(../blocks/cover/cover.css);
+@import url(../blocks/cover/__pic/cover__pic.css);
 @import url(../blocks/cover/__link/cover__link.css);
 @import url(../blocks/cover/__overlay/cover__overlay.css);
 @import url(../blocks/cover/__subtitle/cover__subtitle.css);

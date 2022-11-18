@@ -7,27 +7,21 @@
     font-size: 72px;
     line-height: 76px;
     text-align: center;
-    padding-top: 245px;
     max-width: 560px;
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 750px) {
     .cover__title {
-        padding-top: 195px;
+        font-size: calc((72px + 32px)/2);
+        line-height: calc((76px + 35px)/2);
+        max-width: calc((288px + 560px)/2);
     }
 }
 
-@media screen and (max-width: 1000px) {
-    .cover__title {
-        padding-top: 115px;
-    }
-}
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 500px) {
     .cover__title {
         font-size: 32px;
         line-height: 35px;
         max-width: 288px;
-        padding-top: 33px;
     }
 }

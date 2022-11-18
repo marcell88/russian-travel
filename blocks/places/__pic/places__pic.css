@@ -22,14 +22,6 @@
     .places__pic {
         width: 320px;
         height: 320px;
-    }
-}
-
-/* 320px-: фиксируем размер 320px */
-@media screen and (max-width: 700px) {
-    .places__pic {
         align-self: center;
-        width: 320px;
-        height: 320px;
     }
 }

@@ -10,7 +10,7 @@
 }
 
 
-@media screen and (max-width: 928px) {
+@media screen and (max-width: 1000px) {
     .lead__title{
         box-sizing: border-box;
         max-width: 100%;
